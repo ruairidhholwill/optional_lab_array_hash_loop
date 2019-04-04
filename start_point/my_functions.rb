@@ -19,5 +19,5 @@ end
 
 def get_first_key(hash)
   new_array = hash.keys
-  return new_array[0] 
+  return new_array[0]
 end

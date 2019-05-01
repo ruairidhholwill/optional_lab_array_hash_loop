@@ -60,17 +60,14 @@ class My_Functions < MiniTest::Test
   # It should return the first key from the hash
 
   def test_get_first_key
-    # arrange
     wallets = {
-      "Alice" => 12,
+      "Alice" => 15,
       "Bob"  => 10,
-      "Charlie"  => 1356,
-      "Dave" => 1
+      "Charlie"  => 20,
+      "Dave" => 5
     }
-    # act
     result = get_first_key( wallets )
-    # assert
-    assert_equal( 'Alice', result )
+    assert_equal( 'Bob', result )
   end
 
 end
